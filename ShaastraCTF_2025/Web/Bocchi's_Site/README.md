@@ -7,7 +7,7 @@ The main idea finding the flag is navigation in Inspect or source code of diffre
 
 ## Step 1:- 
 usign the provided link https://bocchi.ctf-shaastra2025.info<br>
- we are encountered with this webpage:
+ we are encountered with this webpage
 
 
 
@@ -15,9 +15,11 @@ usign the provided link https://bocchi.ctf-shaastra2025.info<br>
 
 ![alt text](image1.png)<br>
  ## Step 2:-
- Usign the inspect tool of browser or directly view source code option.<br>
-At the source code of GOTOH HITORI we found a hint and a followup for other part.<br>
-using <b>Cyberchef</B> to decode the flag and following the step given.
+Using the Inspect tool in the browser or directly viewing the page source code, we found a hint inside the section labeled "GOTOH HITORI." This hint leads us to another step in the challenge.
+
+By analyzing the hint and extracting encoded data, we can use <b><a herf=https://gchq.github.io/CyberChef/>CyberChef<b></a> to decode it and uncover additional clues.
+
+Below are some images showing the process:
 <p align="center">
   <img src="image2.png" alt="Description" width="600" height="400">
 </p><p align="center">
@@ -40,10 +42,8 @@ using <b>Cyberchef</B> to decode the flag and following the step given.
 
 ## Step 3:-
 
+After following all the hints and decoding the hidden messages, we finally obtain the flag:
 
+```Shaastra{_bocchi__kita-chan__ryo_!yamada__seika!!}```
 
-The final flag coming out to be is <br>
-
-```bash
-Shaastra{_bocchi__kita-chan__ryo_!yamada__seika!!}
-```
+This challenge required careful inspection of the webpage, decoding of hidden information, and following the provided clues systematically.

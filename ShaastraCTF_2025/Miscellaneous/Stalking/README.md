@@ -7,26 +7,31 @@ Find the flag by stalking the user add underscore before and after n in id.
 </p>
 
 ## Step:-1
+We are given a file named Anonymous.webp. Since WebP is a modern image format, we should inspect its metadata to check if any hidden information is embedded within it.
 
-In this question we are given a<b> Anonymous.webp</b> file.<br> <b>WebP</b> is a modern image file format that allows for lossy and lossless compression of images:
-<br>lets find out more about file in terminal.
+Using the terminal, let's analyze the file details.
+
 
 <p align="center">
   <img src="Anonymous.webp" alt="Description" width="500" height="500">
 </p>
 
 ## Step:-2
-using ```exiftool``` a command-line tool used for reading, writing, and modifying metadata in various file formats, including images, videos, documents, and audio files. 
+We use the exiftool command, which is a tool used for extracting metadata from various file formats, including images, videos, and documents.<br>
+```bash
+
+exiftool Anonymous.webp
+```
 <p align="center">
   <img src="image2.jpeg" alt="Description" width="900" height="500">
 </p>
+This command reveals the metadata, and within the extracted details, we find an Instagram user ID: 
 
-here we found a Instagram id `n.o.l.o.v.e._`
+```n.o.l.o.v.e._```
 
 ## Step3:-
-As the question suggest we need to add underscore before and after the n.<br> 
-Therfore the user id become `_n_.o.l.o.v.e._`
-After searching for this user on instagram. we will get the flag in comments section. 
+As per the challenge instructions, we need to modify the username by adding underscores before and after the letter n. This transforms the username into: `_n_.o.l.o.v.e._`
+By searching for this user on Instagram and checking their comments or posts, we find the hidden flag embedded within the comments section.
 
 
 

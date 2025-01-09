@@ -4,9 +4,8 @@ Can you navigate the twists and turns of the file and find flag?
 
 ## Step1:-
 
-We have given a zip file. lets open it in terminal.
-use this command to unzip the file
 
+We are given a zip file. Let's open it in the terminal using the following command:
 ```bash
 unzip smallfolder.zip
 ```
@@ -17,45 +16,46 @@ unzip smallfolder.zip
 
 ## Step2:-
 
-After extracting the file, we got <b>gitquestion</b>. As name suggest we might need to use git command or something similar.
+After extracting the file, we got a folder named <b>gitquestion<b>.
+ As the name suggests, we might need to use Git commands or something similar.
+
+
 
 <p align="center">
   <img src="image2.jpeg" alt="Description" width="500" height="500">
 </p>
-Yes!! we need to use git command.
+Examining the directory structure confirms that it is a Git repository.
 <p align="center">
   <img src="image3.jpeg" alt="Description" width="500" height="500">
 </p>
 
 ## Step3:-
-
-We will be using the<b> VS Code</b> extension <b>Git Graph </b>to analyze what exactly is happening.<p align="center">
+To analyze what exactly is happening in this repository, we will use the Git Graph extension in VS Code. This helps visualize the commit history.
+<p align="center">
 <img src="image4.png" alt="Description" >
 
 </p>
-here we got the second part of the flag . In Fourth commit user id is bit diffrent than other i.e.
+Looking at the commits, we find that the fourth commit has a user ID that is slightly different from the others. It contains the partial string.
 
-`ster_!n`
+```ster_!n```
 
 ## Step4:-
-
-Therefore starting part of flag is `Shaastra{M@`
+From this clue, we deduce that the starting part of the flag is: ```Shaastra{M@```
 
 <p>
   <img src="image5.png" alt="Description" >
 </p>
 
 ## Step5:-
-
-sixth commit says something about flag. lets investigate more in sixth commit.
+The sixth commit contains additional references to the flag. Let's investigate further.
 
   <p><img src="image6.png" alt="Description" >
 </p>
-Check weather there is any branch or not??<br>
-yes!!!
+Checking for any branches in the repository reveals another hint. A branch contains more flag fragments, 
 <p align="center">
   <img src="image7.png" alt="Description" width="300" height="300">
 </p>
 Final flag is
 
-`Shaasta{M@ster_!n_g1t_commit}`
+```Shaasta{M@ster_!n_g1t_commit}```<br>
+Thus, by carefully inspecting the commit history and branches, we successfully retrieved the full flag!
