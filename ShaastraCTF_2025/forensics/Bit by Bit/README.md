@@ -53,5 +53,5 @@ Extract the hidden text that appears in the bit-plane analysis.
 After correctly extracting the hidden message from the image, we retrieve the final flag:
 
 ```bash
-Shaastar(ST3g@_N 0_Gr@ghy .hehe)
+Shaastra{ST3g@_N0_Gr@qhy.hehe}
 ```
